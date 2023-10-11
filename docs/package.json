@@ -1,0 +1,14 @@
+{
+  "name": "@my-component/docs",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev .",
+    "build": "vitepress build .",
+    "preview": "vitepress preview ."
+  },
+  "devDependencies": {
+    "markdown-it-container": "^3.0.0",
+    "vitepress": "1.0.0-alpha.46",
+    "vue": "^3.2.47"
+  }
+}

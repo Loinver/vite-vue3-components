@@ -1,0 +1,31 @@
+{
+  "name": "my-component",
+  "version": "1.0.1",
+  "description": "my component library!",
+  "scripts": {
+    "prebuild": "rimraf es/ dist/",
+    "build": "run-s prebuild build:*",
+    "build:core": "vite build",
+    "build:css": "rollup -c rollup.config.js",
+    "test": "vitest run --environment jsdom",
+    "test:watch": "vitest --environment jsdom"
+  },
+  "main": "dist/my-component.js",
+  "module": "dist/my-component.js",
+  "files": [
+    "dist",
+    "es"
+  ],
+  "keywords": [
+    "vue",
+    "component library"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "vue": "^3.2.47"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.47"
+  }
+}

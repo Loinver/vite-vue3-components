@@ -1,0 +1,39 @@
+<!--
+ * @Author: Linyer honeyliner@163.com
+ * @Date: 2023-08-15 14:53:45
+ * @LastEditors: Linyer honeyliner@163.com
+ * @LastEditTime: 2023-10-07 11:40:18
+ * @FilePath: /compoment-library-master/packages/core/components/button/button.vue
+ * @Description:
+-->
+<script setup>
+import { useDefaultPrefix } from '@my-component/core/hooks/usePrefix';
+import { defaultComponentPrefix } from '@my-component/core/utils/config';
+const props = defineProps({
+  type: String,
+});
+const emits = defineEmits(['click']);
+defineOptions({
+  name: `${defaultComponentPrefix}Button`,
+});
+const className = useDefaultPrefix('button');
+console.log('%c [  ]-21-「button」', 'font-size:13px; background:pink; color:#bf2c9f;', className, props.type);
+const handleClick = (event) => {
+  emits('click', event);
+};
+</script>
+
+<template>
+  <button
+    :class="[
+      className.defaultName,
+      {
+        [className.types.isPrimary]: props.type === 'primary',
+        [className.types.isDefault]: props.type !== 'primary',
+      },
+    ]"
+    @click="handleClick"
+  >
+    <slot />
+  </button>
+</template>
