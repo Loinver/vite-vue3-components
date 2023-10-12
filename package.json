@@ -12,9 +12,7 @@
     "build:core": "pnpm --filter my-component build:core",
     "build:css": "pnpm --filter my-component build:css",
     "lint": "eslint --ext .vue,.js,.jsx,.ts,.tsx ./ --max-warnings 0",
-    "lint:fix": "eslint --ext .vue,.js,jsx,.ts,.tsx ./ --max-warnings 0 --fix",
-    "stylelint": "stylelint ./src/**/*.{html,vue,sass,scss}",
-    "stylelint:fix": "stylelint --cache --fix ./src/**/*.{html,vue,css,sass,scss}"
+    "lint:fix": "eslint --ext .vue,.js,jsx,.ts,.tsx ./ --max-warnings 0 --fix"
   },
   "pnpm": {
     "peerDependencyRules": {

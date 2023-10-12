@@ -2,17 +2,18 @@
  * @Author: Linyer honeyliner@163.com
  * @Date: 2023-08-15 14:53:45
  * @LastEditors: Linyer honeyliner@163.com
- * @LastEditTime: 2023-10-11 16:47:25
- * @FilePath: /compoment-library/README.md
+ * @LastEditTime: 2023-10-12 13:34:52
+ * @FilePath: /vite-vue3-components/README.md
  * @Description:
 -->
+
 # component lib template
 
-vue 组件库模板。
+vue3+vite 组件库模板。
 
 ## 组件构建
 
-一个组件包含的东西有: 组件（本体）、样式（css）s
+一个组件包含的东西有: 组件（本体）、样式（css）
 
 ### 预构建
 
@@ -20,7 +21,7 @@ vue 组件库模板。
 pnpm prebuild
 ```
 
-### 预构建 & 构建组件 & 样式 & 类型
+### 预构建 & 构建组件 & 样式
 
 ```shell
 pnpm build:all
@@ -38,12 +39,6 @@ pnpm build:core
 pnpm build:css
 ```
 
-### 仅构建类型
-
-```shell
-pnpm build:types
-```
-
 ## 文档
 
 ### 运行文档
@@ -57,7 +52,6 @@ pnpm docs:dev
 ```shell
 pnpm docs:build
 ```
-
 
 ## 测试
 
