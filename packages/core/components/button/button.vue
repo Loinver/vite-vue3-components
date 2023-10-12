@@ -17,7 +17,6 @@ defineOptions({
   name: `${defaultComponentPrefix}Button`,
 });
 const className = useDefaultPrefix('button');
-console.log('%c [  ]-21-「button」', 'font-size:13px; background:pink; color:#bf2c9f;', className, props.type);
 const handleClick = (event) => {
   emits('click', event);
 };

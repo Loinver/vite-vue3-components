@@ -2,21 +2,22 @@
  * @Author: Linyer honeyliner@163.com
  * @Date: 2023-08-15 14:53:45
  * @LastEditors: Linyer honeyliner@163.com
- * @LastEditTime: 2023-09-25 10:40:53
- * @FilePath: /compoment-library-master/docs/.vitepress/theme/components/Demo.vue
+ * @LastEditTime: 2023-10-12 17:27:19
+ * @FilePath: /vite-vue3-components/docs/.vitepress/theme/components/Demo.vue
  * @Description:
 -->
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 const props = defineProps({
   demos: [Object, String],
   code: String,
   componentAddress: String,
-})
-const isShow = ref(false)
+});
+const isShow = ref(false);
 const showCode = () => {
-  isShow.value = !isShow.value
-}
+  isShow.value = !isShow.value;
+};
+
 </script>
 
 <template>
@@ -60,7 +61,7 @@ const showCode = () => {
 }
 .docs-demo .docs-demo-footer .demo-footer-button {
   font-size: 14px;
-  transition: .3s;
+  transition: 0.3s;
   cursor: pointer;
   color: var(--vp-carbon-ads-text-color);
 }
