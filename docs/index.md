@@ -1,3 +1,12 @@
+<!--
+ * @Author: Linyer honeyliner@163.com
+ * @Date: 2023-08-15 14:53:45
+ * @LastEditors: Linyer honeyliner@163.com
+ * @LastEditTime: 2023-10-14 17:08:41
+ * @FilePath: /vite-vue3-components/docs/index.md
+ * @Description:
+-->
+
 ---
 
 layout: home
@@ -5,7 +14,6 @@ layout: home
 hero:
 name: MyComponent
 text: 一个完整组件库示例。
-actions: - theme: brand
 text: 开始
 link: /guide/installation - theme: alt
 text: 在 github 上查看
